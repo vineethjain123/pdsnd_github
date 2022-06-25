@@ -2,6 +2,8 @@ import time
 import pandas as pd
 import numpy as np
 
+# import necessary libraries for the project
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -90,10 +92,10 @@ def time_stats(df):
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
 
-    # Display common month
+    # Displaying common month
     common_month = df['month'].value_counts().idxmax()
 
-    # Change number to month
+    # Changing number to month
     if common_month == 1:
         common_month = "January"
     elif common_month == 2:
