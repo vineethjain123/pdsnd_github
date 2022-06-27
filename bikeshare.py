@@ -189,7 +189,7 @@ def user_stats(df,city):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-def ind_data(df):
+def individual_data(df):
     # Prompt user if they want to see individual trip data.
     start_data = 0
     end_data = 5
@@ -217,7 +217,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df,city)
-        ind_data(df)
+        individual_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
