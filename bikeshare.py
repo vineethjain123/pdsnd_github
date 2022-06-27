@@ -26,7 +26,7 @@ def get_filters():
         if city in cities:
             break
         else:
-            print('Enter valid city!')
+            print('You have entered wrong city ! Please enter valid city')
     # take user input for month
     while True:
         month = input("Enter name of month you want to see data for:\n Enter months between January to June only. If you don't want to filter by month enter 'all'\n").lower()
